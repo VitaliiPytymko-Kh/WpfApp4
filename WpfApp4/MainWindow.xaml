@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="540" Width="999">
+    <Grid>
+        <DataGrid Name ="DGrid1" HorizontalAlignment="Left" Height="293" Margin="298,0,0,0" VerticalAlignment="Center" Width="676"/>
+        <Button x:Name="AddCountry" Content="Add Country" HorizontalAlignment="Left" Margin="21,154,0,0" VerticalAlignment="Top" Width="120" Height="34" Click="AddCountry_Click" />
+        <Button x:Name="AddCity" Content="Add City" HorizontalAlignment="Left" Margin="164,154,0,0" VerticalAlignment="Top" Width="120" Height="34" Click="AddCity_Click" />
+        <Button x:Name="DeleteCountry" Content="Delete Country" HorizontalAlignment="Left" Margin="22,200,0,0" VerticalAlignment="Top" Width="120" Height="34" Click="DeleteCountry_Click" />
+        <Button x:Name="DeleteCity" Content="Delete City" HorizontalAlignment="Left" Margin="164,200,0,0" VerticalAlignment="Top" Width="120" Height="34" Click="DeleteCity_Click" />
+        <Button x:Name="ShowCapital" Content="Show Capital" HorizontalAlignment="Left" Margin="21,257,0,0" VerticalAlignment="Top" Width="120" Height="34" Click="ShowCapital_Click"/>
+        <Button x:Name="ShowCountry" Content="Show Country" HorizontalAlignment="Left" Margin="21,113,0,0" VerticalAlignment="Top" Width="120" Height="34" Click="ShowCountry_Click" />
+        <Button x:Name="EuropeanCountries" Content="European Countries" HorizontalAlignment="Left" Margin="21,302,0,0" VerticalAlignment="Top" Width="120" Height="34" Click="EuropeanCountries_Click" />
+        <Button x:Name="CountrySurfaceArea" Content="Country Surface Area" HorizontalAlignment="Left" Margin="430,69,0,0" VerticalAlignment="Top" Width="119" Height="30" Click="CountrySurfaceArea_Click" />
+        <Button x:Name="CountryPopulation" Content="Country Population" HorizontalAlignment="Left" Margin="567,69,0,0" VerticalAlignment="Top" Width="119" Height="30" Click="CountryPopulation_Click" />
+        <Button x:Name="Top5Population" Content="Top 5 Population" HorizontalAlignment="Left" Margin="706,69,0,0" VerticalAlignment="Top" Width="119" Height="30" Click="Top5Population_Click" />
+        <Button x:Name="MaxPopulation" Content="Max Population" HorizontalAlignment="Left" Margin="706,30,0,0" VerticalAlignment="Top" Width="119" Height="30" Click="MaxPopulation_Click" />
+        <Button x:Name="CountryminArea" Content="Country minArea" HorizontalAlignment="Left" Margin="841,68,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="CountryminArea_Click" />
+        <Button x:Name="CountryCount" Content="Country Count" HorizontalAlignment="Left" Margin="841,30,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="CountryCount_Click" />
+        <Button x:Name="PopulationContinents" Content="Population Continents" HorizontalAlignment="Left" Margin="22,349,0,0" VerticalAlignment="Top" Width="120" Height="34" Click="PopulationContinents_Click" />
+        <Button x:Name="ShowCity" Content="Show City" HorizontalAlignment="Left" Margin="164,113,0,0" VerticalAlignment="Top" Width="120" Height="34" Click="ShowCity_Click" />
+        <Button x:Name="Clear" Content="Clear TextBoxes" HorizontalAlignment="Left" Margin="298,19,0,0" VerticalAlignment="Top" Width="99" Click="Clear_Click" Height="79"/>
+       
+
+        <TextBox x:Name="Country" HorizontalAlignment="Left" Margin="22,19,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="City" HorizontalAlignment="Left" Margin="164,19,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="CountryCode" HorizontalAlignment="Left" Margin="22,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Population" HorizontalAlignment="Left" Margin="164,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="SurfaceArea" HorizontalAlignment="Left" Margin="22,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Continent" HorizontalAlignment="Left" Margin="164,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="From" HorizontalAlignment="Left" Margin="428,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" />
+        <TextBox x:Name="To" HorizontalAlignment="Left" Margin="516,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="Inc" HorizontalAlignment="Left" Margin="604,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="64"/>
+
+        <TextBlock  HorizontalAlignment="Left" Margin="604,10,0,0" TextWrapping="Wrap" Text="Including..." VerticalAlignment="Top" Width="64"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="440,10,0,0" TextWrapping="Wrap" Text="From..." VerticalAlignment="Top" Width="42"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="528,10,0,0" TextWrapping="Wrap" Text="To..." VerticalAlignment="Top" Width="42"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="61,3,0,0" TextWrapping="Wrap" Text="Country" VerticalAlignment="Top"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="214,3,0,0" TextWrapping="Wrap" Text="City" VerticalAlignment="Top"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="184,36,0,0" TextWrapping="Wrap" Text="Population" VerticalAlignment="Top"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="42,36,0,0" TextWrapping="Wrap" Text="Country Code" VerticalAlignment="Top" Width="78"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="198,68,0,0" TextWrapping="Wrap" Text="Continent" VerticalAlignment="Top"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="53,68,0,0" TextWrapping="Wrap" Text="Surface Area" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
